@@ -1,0 +1,4 @@
+release/
+.prepared
+*.exe
+*.sfx
