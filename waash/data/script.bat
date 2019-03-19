@@ -20,7 +20,7 @@ if exist %~dp0\ygg-conf.txt (
 ) else (
     rem file doesn't exist
 	echo Generating a new configuration file...
-	%~dp0\deps\bin\yggdrasil-0.3.3-windows-i386.exe -genconf | %~dp0\deps\bin\sed.exe "/^  Peers:.*$/d;/^}/d" > %~dp0\ygg-conf.txt
+	%~dp0\deps\bin\yggdrasil-0.3.5-windows-i386.exe -genconf | %~dp0\deps\bin\sed.exe "/^  Peers:.*$/d;/^}/d" > %~dp0\ygg-conf.txt
 	type %~dp0\deps\peers.txt >> %~dp0\ygg-conf.txt
 	echo: >> %~dp0\ygg-conf.txt
 	echo } >> %~dp0\ygg-conf.txt
@@ -35,5 +35,5 @@ rem Install TAP from OpenVPN
 %~dp0\deps\bin\tap-windows-9.9.2_3.exe /S
 
 rem Run Yggdrasil
-%~dp0\deps\bin\yggdrasil-0.3.3-windows-i386.exe -useconffile %~dp0\ygg-conf.txt
+%~dp0\deps\bin\yggdrasil-0.3.5-windows-i386.exe -useconffile %~dp0\ygg-conf.txt
 pause
