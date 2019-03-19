@@ -19,8 +19,9 @@ mv *.sfx $R
 unix2dos $ROUT/*.bat
 unix2dos $ROUT/deps/*.txt
 }
-7z a $R/${OUT}.7z $ROUT
+cd $R
+7z a ${OUT}.7z $OUT
 
 # Make the self-extracting exe file
-cat $R/*.sfx > $R/${OUT}.exe
-cat $R/${OUT}.7z >> $R/${OUT}.exe
+cat *.sfx > ${OUT}.exe
+cat ${OUT}.7z >> ${OUT}.exe
