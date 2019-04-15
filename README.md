@@ -8,7 +8,7 @@ to run an automated Yggdrasil.
 Tested on a 64-bit Windows 10.
 
 See the files in Releases tab. This repository contains scripts that
-merely generate the releases.
+merely generate the releases on a Linux system.
 
 Usage
 -----
