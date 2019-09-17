@@ -30,7 +30,7 @@ C:\YGGDRASIL-WAASH-${version}-I386-V${revision}
             elevate.exe
             sed.exe
             tap-windows-9.9.2_3.exe
-            yggdrasil-${version}-windows-i386.exe
+            yggdrasil-windows-i386.exe
 
 \`\`\`
 
