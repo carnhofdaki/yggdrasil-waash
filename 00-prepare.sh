@@ -20,8 +20,18 @@ md5sum -c <<EOF
 EOF
 rm -f elevate-1.3.0-redist.7z
 
-SIZE=$(stat -c "%b*%B" yggdrasil-0.3.5-windows-i386.exe | bc)
-test $SIZE -lt 1824704 || upx yggdrasil-0.3.5-windows-i386.exe
+test -r 7zCon.sfx || {
+  mkdir tmp
+  cd tmp
+  7z x ../7z1900.exe
+  mv 7zCon.sfx ..
+  cd ..
+  rm -rf tmp
+}
+rm -f 7z1900.exe
+
+SIZE=$(stat -c "%b*%B" yggdrasil-$version-windows-i386.exe | bc)
+test $SIZE -lt 1824704 || upx yggdrasil-$version-windows-i386.exe
 
 touch .prepared
 }

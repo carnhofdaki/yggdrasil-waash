@@ -4,7 +4,7 @@ test -r .prepared
 
 . vars.inc
 
-OUT=yggdrasil-waash-${version}-i386-v${revision}
+OUT=yggdrasil-waash-${version}-i386-r${revision}
 R=waash/release
 ROUT=$R/$OUT
 
@@ -13,7 +13,11 @@ mkdir -p $R
 cp -r waash/data $ROUT
 mkdir -p $ROUT/deps/bin
 
+unzip UnxUpdates.zip sed.exe
+rm UnxUpdates.zip
+
 sh gen-README.sh > $ROUT/README.txt
+mv yggdrasil-$version-*.exe $ROUT/deps/bin/yggdrasil-windows-i386.exe
 mv *.exe $ROUT/deps/bin
 mv *.sfx $R
 unix2dos $ROUT/*.bat
