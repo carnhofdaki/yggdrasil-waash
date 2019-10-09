@@ -35,5 +35,5 @@ rem Install TAP from OpenVPN
 %~dp0\deps\bin\tap-windows-9.9.2_3.exe /S
 
 rem Run Yggdrasil
-%~dp0\deps\bin\yggdrasil--windows-i386.exe -useconffile %~dp0\ygg-conf.txt
+%~dp0\deps\bin\yggdrasil-windows-i386.exe -useconffile %~dp0\ygg-conf.txt
 pause
