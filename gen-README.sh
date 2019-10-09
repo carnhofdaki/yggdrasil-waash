@@ -14,10 +14,10 @@ set of Peers (found in \`deps/peers.txt\` file) into it.
 
 Contents of the archive:
 \`\`\`
-C:\>tree /F yggdrasil-waash-${version}-i386-v${revision}
+C:\>tree /F yggdrasil-waash-${version}-i386-r${revision}
 Folder PATH listing for volume Windows
 Volume serial number is FFFF-FFFF
-C:\YGGDRASIL-WAASH-${version}-I386-V${revision}
+C:\YGGDRASIL-WAASH-${version}-I386-R${revision}
 │   000-RUNME.bat
 │   README.txt
 │   script.bat
