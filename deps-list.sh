@@ -1,6 +1,6 @@
 #!/bin/sh
 
-. vars.inc
+. $PWD/vars.inc
 
 cat <<EOF
 https://code.kliu.org/misc/elevate/elevate-1.3.0-redist.7z

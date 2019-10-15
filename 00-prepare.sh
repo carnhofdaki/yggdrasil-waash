@@ -6,7 +6,7 @@ for dep in wget 7z md5sum stat bc upx
 do type $dep; done
 
 test -r .prepared || {
-. vars.inc
+. $PWD/vars.inc
 
 sh deps-list.sh | wget -nc -ci - || true
 
