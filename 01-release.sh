@@ -2,7 +2,7 @@
 
 test -r .prepared
 
-. vars.inc
+. $PWD/vars.inc
 
 OUT=yggdrasil-waash-${version}-i386-r${revision}
 R=waash/release

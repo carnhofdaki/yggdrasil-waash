@@ -1,6 +1,6 @@
 #!/bin/sh
 
-. vars.inc
+. $PWD/vars.inc
 
 unix2dos <<EOF
 Yggdrasil-waash
