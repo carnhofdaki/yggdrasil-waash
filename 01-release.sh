@@ -14,12 +14,11 @@ cp -r waash/data $ROUT
 mkdir -p $ROUT/deps/bin
 
 unzip UnxUpdates.zip sed.exe
-rm UnxUpdates.zip
 
 sh gen-README.sh > $ROUT/README.txt
-mv yggdrasil-$version-*.exe $ROUT/deps/bin/yggdrasil-windows-i386.exe
-mv *.exe $ROUT/deps/bin
-mv *.sfx $R
+cp yggdrasil-$version-*.exe $ROUT/deps/bin/yggdrasil-windows-i386.exe
+cp *.exe $ROUT/deps/bin
+cp *.sfx $R
 unix2dos $ROUT/*.bat
 unix2dos $ROUT/deps/*.txt
 }
