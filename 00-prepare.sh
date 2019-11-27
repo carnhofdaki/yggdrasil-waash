@@ -2,7 +2,7 @@
 #
 # dependencies:
 
-for dep in wget 7z md5sum stat bc upx
+for dep in wget 7z md5sum stat bc upx jq
 do type $dep; done
 
 test -r .prepared || {
