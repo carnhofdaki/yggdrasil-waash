@@ -1,6 +1,3 @@
-release/
-.prepared
-*.exe
-*.sfx
-*.zip
-*.7z
+.prepared-*
+tmp/
+waash/release/
