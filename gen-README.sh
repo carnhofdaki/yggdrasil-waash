@@ -9,7 +9,7 @@ Yggdrasil-waash
 Usage: Run \`000-RUNME.bat\`
 
 This is a simple way to run Yggdrasil on a Windows machine.
-It generates a new configuration file and adds a predefinet
+It generates a new configuration file and adds a predefined
 set of Peers (found in \`deps/peers.txt\` file) into it.
 
 Contents of the archive:
