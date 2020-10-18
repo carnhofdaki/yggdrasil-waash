@@ -1,7 +1,10 @@
 #!/bin/sh -e
 
 . $PWD/vars.inc
-test -r .prepared-$version
+test -r .prepared-$version || {
+  echo "Please run ./00-prepare.sh first" >&2
+  exit 1
+}
 
 OUT=yggdrasil-waash-${version}-i386-r${revision}
 R=waash/release
